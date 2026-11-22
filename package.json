@@ -1,0 +1,16 @@
+{
+  "name": "consensus-feed",
+  "version": "1.0.0",
+  "description": "ConsensusFeed - multi-source median price feed primitive for GenLayer",
+  "type": "module",
+  "scripts": {
+    "deploy": "node deploy/deploy.mjs",
+    "interact": "node deploy/interact.mjs",
+    "test:logic": "python3 tests/test_logic.py",
+    "test": ".venv/bin/python -m pytest tests/ -v",
+    "lint": ".venv/bin/genvm-lint check contracts/consensus_feed.py"
+  },
+  "dependencies": {
+    "genlayer-js": "^1.1.8"
+  }
+}

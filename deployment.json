@@ -1,0 +1,41 @@
+{
+  "network": "studionet",
+  "chainId": 61999,
+  "rpc": "https://studio.genlayer.com/api",
+  "deployer": "0xfD7d408f5Cc0A4d507bDc41c48B4A00A8C9Fc399",
+  "feeds": [
+    {
+      "symbol": "BTC/USD",
+      "tx": "0xcbeb206335825bf61a457c48be18145eea0b5a9e45debddc86d4eaa137caacd2",
+      "finalized": true
+    },
+    {
+      "symbol": "ETH/USD",
+      "tx": "0x7e9be0f2f8f3a43c1a701d46123340ca98f65720f6ab6119f544c0a18a180805",
+      "finalized": true
+    }
+  ],
+  "deployTx": "0xe69313a4b68b40efca3afa7754e00a5b847cad09394591b8a95c6fd6374c7e27",
+  "contractAddress": "0xd13000D4e92FD60a47c7074c8cfd59f4d2bEA826",
+  "explorer": "https://explorer-studio.genlayer.com/address/0xd13000D4e92FD60a47c7074c8cfd59f4d2bEA826",
+  "rounds": [
+    {
+      "feed": "BTC/USD",
+      "round": 1,
+      "tx": "0x2d49072159733789fcfb8f21ddbcf7cc555dc0e113cc3bdf8abf87b0c2cf7246",
+      "price": "60628.6125",
+      "raw": 6062861250000,
+      "sources_used": "4/4",
+      "updated_at": "2026-11-22T19:50:06Z"
+    },
+    {
+      "feed": "ETH/USD",
+      "round": 1,
+      "tx": "0x83ecf1f499d257a44b851aeead1c2d228b76a0c0251f1b34b38a22386e959032",
+      "price": "1712.52",
+      "raw": 171252000000,
+      "sources_used": "4/4",
+      "updated_at": "2026-11-22T19:50:52Z"
+    }
+  ]
+}

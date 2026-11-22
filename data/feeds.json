@@ -1,0 +1,28 @@
+[
+  {
+    "symbol": "BTC/USD",
+    "decimals": 8,
+    "min_sources": 3,
+    "max_deviation_bps": 100,
+    "tolerance_bps": 50,
+    "sources": [
+      { "name": "coingecko", "url": "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd", "path": "bitcoin.usd" },
+      { "name": "coinbase", "url": "https://api.coinbase.com/v2/prices/BTC-USD/spot", "path": "data.amount" },
+      { "name": "kraken", "url": "https://api.kraken.com/0/public/Ticker?pair=XBTUSD", "path": "result.XXBTZUSD.c.0" },
+      { "name": "bitstamp", "url": "https://www.bitstamp.net/api/v2/ticker/btcusd/", "path": "last" }
+    ]
+  },
+  {
+    "symbol": "ETH/USD",
+    "decimals": 8,
+    "min_sources": 3,
+    "max_deviation_bps": 100,
+    "tolerance_bps": 50,
+    "sources": [
+      { "name": "coingecko", "url": "https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd", "path": "ethereum.usd" },
+      { "name": "coinbase", "url": "https://api.coinbase.com/v2/prices/ETH-USD/spot", "path": "data.amount" },
+      { "name": "kraken", "url": "https://api.kraken.com/0/public/Ticker?pair=ETHUSD", "path": "result.XETHZUSD.c.0" },
+      { "name": "bitstamp", "url": "https://www.bitstamp.net/api/v2/ticker/ethusd/", "path": "last" }
+    ]
+  }
+]
